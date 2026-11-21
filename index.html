@@ -64,9 +64,23 @@
       font-size: 0.95rem;
     }
     .nav-links a:hover { color: var(--ink); }
-    .hero { padding: 56px 0 40px; }
-    .hero h1 { font-size: 2.2rem; line-height: 1.2; margin-bottom: 12px; }
-    .hero p { color: var(--muted); max-width: 68ch; margin-bottom: 24px; }
+
+    /* Hero section with background image and dark readability overlay */
+    .hero {
+      position: relative;
+      background-color: #1e242b;
+      
+      background-image: linear-gradient(rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.65)), url('marafront.webp');
+      
+      background-size: cover;
+      background-position: center 50%;
+      background-repeat: no-repeat;
+      color: #ffffff;
+      padding: 88px 0 76px;
+    }
+    .hero h1 { font-size: 2.4rem; line-height: 1.2; margin-bottom: 14px; }
+    .hero p { color: #e2e8f0; max-width: 64ch; margin-bottom: 26px; font-size: 1.05rem; }
+
     .btn {
       display: inline-block;
       background: var(--accent);
@@ -124,8 +138,8 @@
     </div>
   </header>
 
-  <main class="container">
-    <div class="hero">
+  <section class="hero">
+    <div class="container">
       <h1>The Marathon Hotel</h1>
       <p>Historic boutique inn in North Head, Grand Manan Island, New Brunswick. Book direct for live availability and instant confirmation.</p>
       <a class="btn" href="https://beds24.com/booking2.php?propid=YOUR_PROP_ID" target="_blank" rel="noopener noreferrer"
@@ -133,7 +147,9 @@
         Check Availability &amp; Book
       </a>
     </div>
+  </section>
 
+  <main class="container">
     <section id="rooms">
       <h2>Accommodations</h2>
       <div class="grid">
